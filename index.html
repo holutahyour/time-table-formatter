@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100,300,400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FGBMFI - Convert Feature</title>
+</head>
+
+<body class="space-y-5 w-screen font-poppins p-3 text-center">
+  <h1 class="text-5xl text-gray-500 font-thin">Excel Template Generator</h1>
+
+  <!-- <div class="flex flex-col items-center space-y-4">
+    <label class="font-normal" for="file_name">File Name</label>
+    <input class="rounded-full border-green-500 border-2" min="1" type="text" name="file_name" id="file_name">
+  </div>   -->
+  <!-- <div class="flex flex-col items-center space-y-4">
+    <label class="font-normal" for="sheet_name">Sheet Name</label>
+    <input class="rounded-full border-green-500 border-2" min="1" type="text" name="sheet_name" id="sheet_name">
+  </div> -->
+  <div class="flex flex-col items-center space-y-4">
+    <label class="font-normal" for="import">District Code</label>
+    <input class="rounded-full border-green-500 border-2" min="1" type="text" name="distrctCode" id="districtCode">
+  </div>
+  <div class="flex flex-col items-center space-y-4">
+    <label class="font-normal" for="import">Chapter File</label>
+    <input class="rounded-full border-green-500 border-2 file:border-none file:bg-green-500 file:text-white file:text-sm file:font-thin file:p-2 file:cursor-pointer" type="file" name="import" id="import">
+  </div>
+  <button class="bg-green-500 rounded-full text-white text-sm py-2 px-5 shadow-md shadow-green-300 tracking-wider "
+    type="button" id="transform_button">Transform</button>
+
+  <div id="table" class="flex flex-col w-screen">
+
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
